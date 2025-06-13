@@ -57,11 +57,11 @@ export const SpinningLogos: React.FC = () => {
           })}
         </div>
         <div className="absolute inset-0 flex items-center justify-center">
-          <div className="bg-[#F9F7F6] rounded-full w-3/5 h-3/5 flex items-center justify-center shadow-inner border-4 border-[#C6C0BE]/20">
+          <div className="bg-[#F9F7F6] rounded-full w-2/5 sm:w-3/5 h-2/5 sm:h-3/5 flex items-center justify-center shadow-inner border-4 border-[#C6C0BE]/20">
             <img 
               src="/lovable-uploads/c13f40f6-288e-4f74-bb4b-0c73571c3042.png" 
               alt="Logo" 
-              className="w-40 h-40 object-contain"
+              className="w-24 sm:w-40 h-24 sm:h-40 object-contain"
             />
           </div>
         </div>
