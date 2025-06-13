@@ -21,7 +21,7 @@ export const HeroSection = ({
     <AuroraBackground className="min-h-screen bg-[#F9F7F6]">
       <section className="w-full min-h-screen overflow-hidden md:overflow-visible flex flex-col lg:flex-row items-center justify-center relative px-8 lg:px-16 xl:px-24 py-6 lg:py-8 gap-6 lg:gap-12">
         {/* Conteúdo principal */}
-        <div className="flex flex-col justify-center items-center lg:items-start w-full lg:w-1/2 z-50 pointer-events-auto order-2 lg:order-1 max-w-2xl lg:max-w-none px-4 lg:px-8">
+        <div className="flex flex-col justify-center items-center lg:items-start w-full lg:w-1/2 z-50 pointer-events-auto order-2 lg:order-1 max-w-2xl lg:max-w-none">
           <motion.h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center lg:text-left w-full justify-center lg:justify-start items-center lg:items-start flex whitespace-pre leading-tight tracking-tight font-bold" animate={{
           opacity: 1,
           y: 0
