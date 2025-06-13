@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle, Users, TrendingUp, Target, ArrowRight, Star } from "lucide-react";
@@ -14,7 +13,7 @@ const Index = () => {
       <section className="relative py-20 px-4 md:py-32">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-            Chega de dançar.{" "}
+            Chega de trends.{" "}
             <span className="text-blue-600">Atraia clientes com vídeos</span>{" "}
             que realmente vendem.
           </h1>
