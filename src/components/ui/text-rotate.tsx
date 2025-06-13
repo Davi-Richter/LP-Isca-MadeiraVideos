@@ -1,4 +1,3 @@
-
 "use client"
 
 import {
@@ -177,7 +176,7 @@ const TextRotate = forwardRef<TextRotateRef, TextRotateProps>(
 
     return (
       <motion.span
-        className={cn("flex flex-wrap whitespace-nowrap", mainClassName)}
+        className={cn("flex flex-nowrap whitespace-nowrap", mainClassName)}
         {...props}
         layout
         transition={transition}
@@ -235,7 +234,7 @@ const TextRotate = forwardRef<TextRotateRef, TextRotateProps>(
                     </motion.span>
                   ))}
                   {wordObj.needsSpace && (
-                    <span className="whitespace-nowrap"> </span>
+                    <span> </span>
                   )}
                 </span>
               )
