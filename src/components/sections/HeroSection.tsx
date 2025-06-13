@@ -1,4 +1,3 @@
-
 import { CheckCircle, ArrowRight } from "lucide-react";
 import { TextRotate } from "@/components/ui/text-rotate";
 import { SpinningLogos } from "@/components/ui/spinning-logos";
@@ -134,7 +133,7 @@ export const HeroSection = ({
           duration: 0.6,
           ease: "easeOut",
           delay: 0.4
-        }} className="transform scale-50 sm:scale-60 md:scale-75 lg:scale-90 xl:scale-100">
+        }} className="transform scale-40 sm:scale-60 md:scale-75 lg:scale-90 xl:scale-100">
             <SpinningLogos />
           </motion.div>
         </div>
