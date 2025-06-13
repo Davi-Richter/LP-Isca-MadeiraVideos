@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle, Users, TrendingUp, Target, ArrowRight, Star } from "lucide-react";
@@ -108,11 +107,9 @@ const Index = () => {
                 <TextRotate
                   texts={[
                     "trends.",
-                    "danças.",
-                    "mimimi.",
-                    "sorte.",
-                    "viralizar.",
-                    "tentativas.",
+                    "dancinhas.",
+                    "amadorismo.",
+                    "perder tempo.",
                   ]}
                   mainClassName="overflow-hidden pr-3 text-[#C6C0BE] py-0 pb-2 md:pb-4 rounded-xl"
                   staggerDuration={0.03}
@@ -126,13 +123,12 @@ const Index = () => {
           </motion.h1>
           
           <motion.p
-            className="text-lg sm:text-xl md:text-2xl text-center pt-4 sm:pt-8 md:pt-10 lg:pt-12 leading-relaxed max-w-3xl mx-auto"
+            className="text-base sm:text-lg md:text-xl text-center pt-4 sm:pt-8 md:pt-10 lg:pt-12 leading-relaxed max-w-2xl mx-auto"
             animate={{ opacity: 1, y: 0 }}
             initial={{ opacity: 0, y: 20 }}
             transition={{ duration: 0.2, ease: "easeOut", delay: 0.5 }}
           >
-            Agende uma consultoria gratuita e descubra o método exato para transformar seu perfil 
-            numa máquina de captação de clientes, sem depender de trends ou músicas populares.
+            Consultoria gratuita para transformar seu perfil numa máquina de captação de clientes.
           </motion.p>
 
           <div className="flex flex-col justify-center items-center mt-10 sm:mt-16 md:mt-20 lg:mt-20 space-y-4">
