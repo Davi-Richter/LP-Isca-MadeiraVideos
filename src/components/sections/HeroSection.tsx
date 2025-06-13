@@ -34,7 +34,7 @@ export const HeroSection = ({
         noisePatternRefreshInterval={8}
         noisePatternAlpha={15}
         className="z-0"
-      />
+      >
 
       {/* Conteúdo principal */}
       <div className="flex flex-col justify-center items-center lg:items-start w-full lg:w-1/2 z-50 pointer-events-auto order-2 lg:order-1 max-w-2xl lg:max-w-none">
@@ -155,5 +155,6 @@ export const HeroSection = ({
           <SpinningLogos />
         </motion.div>
       </div>
+    </GradientBackground>
     </section>;
 };
