@@ -52,8 +52,13 @@ export const HeroSection = ({ onScrollToForm, images, rotatingTexts }: HeroSecti
               gradientColors="linear-gradient(90deg, #363331, #C6C0BE, #363331)"
               gradientAnimationDuration={2}
             />
-            <span> vídeos que realmente </span>
-            <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#363331] leading-tight tracking-tight">vendem</span>
+            <AnimatedText 
+              text="vídeos que realmente vendem" 
+              textClassName="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight tracking-tight"
+              className="py-0 justify-center lg:justify-start"
+              gradientColors="linear-gradient(90deg, #363331, #C6C0BE, #363331)"
+              gradientAnimationDuration={2.5}
+            />
             <span>.</span>
           </div>
         </motion.div>
