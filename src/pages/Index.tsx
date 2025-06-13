@@ -21,7 +21,6 @@ const Index = () => {
     "trends.",
     "dancinhas.",
     "amadorismo.",
-    "perder tempo.",
   ];
 
   return (
