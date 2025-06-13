@@ -1,3 +1,4 @@
+
 "use client"
 
 import React from 'react';
@@ -10,9 +11,9 @@ import {
 import { cn } from '@/lib/utils';
 
 export const SpinningLogos: React.FC = () => {
-  const radiusToCenterOfIcons = 120;
-  const iconWrapperWidth = 50;
-  const ringPadding = 30;
+  const radiusToCenterOfIcons = 160; // Aumentado de 120 para 160
+  const iconWrapperWidth = 65; // Aumentado de 50 para 65
+  const ringPadding = 40; // Aumentado de 30 para 40
 
   const toRadians = (degrees: number): number => (Math.PI / 180) * degrees;
 
@@ -50,7 +51,7 @@ export const SpinningLogos: React.FC = () => {
                 )}
                 aria-label={`${logo.name} logo`}
               >
-                <logo.Icon className="w-5 h-5" />
+                <logo.Icon className="w-6 h-6" />
               </div>
             );
           })}
@@ -60,7 +61,7 @@ export const SpinningLogos: React.FC = () => {
             <img 
               src="/lovable-uploads/c13f40f6-288e-4f74-bb4b-0c73571c3042.png" 
               alt="Logo" 
-              className="w-32 h-32 object-contain"
+              className="w-40 h-40 object-contain"
             />
           </div>
         </div>
