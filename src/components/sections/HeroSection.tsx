@@ -134,7 +134,7 @@ export const HeroSection = ({
           duration: 0.6,
           ease: "easeOut",
           delay: 0.4
-        }} className="transform scale-25 sm:scale-60 md:scale-75 lg:scale-90 xl:scale-100">
+        }} className="transform scale-25 sm:scale-60 md:scale-75 lg:scale-110 xl:scale-125">
             <SpinningLogos />
           </motion.div>
         </div>
