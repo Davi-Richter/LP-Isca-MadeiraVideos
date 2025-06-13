@@ -119,7 +119,10 @@ const Index = () => {
                 />
               </motion.span>
             </LayoutGroup>
-            <span className="text-[#363331]">Atraia clientes com vídeos que realmente vendem.</span>
+            <span className="text-[#363331]">
+              Atraia clientes com vídeos<br />
+              que realmente vendem.
+            </span>
           </motion.h1>
           
           <motion.p
