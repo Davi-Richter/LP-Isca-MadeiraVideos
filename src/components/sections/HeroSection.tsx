@@ -1,5 +1,4 @@
 
-
 import { CheckCircle, ArrowRight } from "lucide-react";
 import { TextRotate } from "@/components/ui/text-rotate";
 import { SpinningLogos } from "@/components/ui/spinning-logos";
@@ -24,7 +23,7 @@ export const HeroSection = ({
       <section className="w-full min-h-screen overflow-hidden md:overflow-visible flex flex-col lg:flex-row items-center justify-center relative px-8 lg:px-16 xl:px-24 py-6 lg:py-8 gap-6 lg:gap-12">
         {/* Conteúdo principal */}
         <div className="flex flex-col justify-center items-center lg:items-start w-full lg:w-1/2 z-50 pointer-events-auto order-2 lg:order-1 max-w-2xl lg:max-w-none">
-          <motion.h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center lg:text-left w-full justify-center lg:justify-start items-center lg:items-start flex whitespace-pre leading-tight tracking-tight font-bold" animate={{
+          <motion.h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center lg:text-left w-full justify-center lg:justify-start items-center lg:items-start flex whitespace-pre leading-tight tracking-tight font-bold font-right-grotesk" animate={{
           opacity: 1,
           y: 0
         }} initial={{
@@ -58,14 +57,14 @@ export const HeroSection = ({
           ease: "easeOut",
           delay: 0.4
         }} className="mt-2 md:mt-3 lg:mt-4 text-center lg:text-left">
-            <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#363331] leading-tight tracking-tight">
-              <AnimatedText text="Atraia clientes com" textClassName="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight tracking-tight" className="py-0 justify-center lg:justify-start" gradientColors="linear-gradient(90deg, #363331, #C6C0BE, #363331)" gradientAnimationDuration={2} />
-              <AnimatedText text="vídeos que realmente vendem" textClassName="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight tracking-tight" className="py-0 justify-center lg:justify-start" gradientColors="linear-gradient(90deg, #363331, #C6C0BE, #363331)" gradientAnimationDuration={2.5} />
+            <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#363331] leading-tight tracking-tight font-right-grotesk">
+              <AnimatedText text="Atraia clientes com" textClassName="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight tracking-tight font-right-grotesk" className="py-0 justify-center lg:justify-start" gradientColors="linear-gradient(90deg, #363331, #C6C0BE, #363331)" gradientAnimationDuration={2} />
+              <AnimatedText text="vídeos que realmente vendem" textClassName="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight tracking-tight font-right-grotesk" className="py-0 justify-center lg:justify-start" gradientColors="linear-gradient(90deg, #363331, #C6C0BE, #363331)" gradientAnimationDuration={2.5} />
               
             </div>
           </motion.div>
           
-          <motion.p className="text-sm sm:text-base md:text-lg lg:text-xl text-center lg:text-left pt-3 sm:pt-4 md:pt-5 lg:pt-6 leading-relaxed max-w-xl lg:mx-0 mx-auto" animate={{
+          <motion.p className="text-sm sm:text-base md:text-lg lg:text-xl text-center lg:text-left pt-3 sm:pt-4 md:pt-5 lg:pt-6 leading-relaxed max-w-xl lg:mx-0 mx-auto font-aeonik" animate={{
           opacity: 1,
           y: 0
         }} initial={{
@@ -98,9 +97,7 @@ export const HeroSection = ({
           }} whileTap={{
             scale: 0.95
           }}>
-              <InteractiveHoverButton onClick={onScrollToForm} variant="dark" className="bg-[#363331] text-white px-6 lg:px-8 py-3 lg:py-4 text-sm sm:text-base lg:text-lg font-semibold rounded-full shadow-lg hover:shadow-xl" style={{
-              fontFamily: 'Inter, system-ui, sans-serif'
-            }}>
+              <InteractiveHoverButton onClick={onScrollToForm} variant="dark" className="bg-[#363331] text-white px-6 lg:px-8 py-3 lg:py-4 text-sm sm:text-base lg:text-lg font-semibold rounded-full shadow-lg hover:shadow-xl font-aeonik">
                 <span className="flex items-center gap-2">
                   Quero Minha Consultoria Gratuita
                   <ArrowRight className="h-4 w-4 lg:h-5 lg:w-5" />
@@ -108,7 +105,7 @@ export const HeroSection = ({
               </InteractiveHoverButton>
             </motion.div>
             
-            <motion.p className="text-xs sm:text-sm text-[#C6C0BE] flex items-center justify-center lg:justify-start gap-2 text-center lg:text-left" animate={{
+            <motion.p className="text-xs sm:text-sm text-[#C6C0BE] flex items-center justify-center lg:justify-start gap-2 text-center lg:text-left font-aeonik" animate={{
             opacity: 1,
             y: 0
           }} initial={{
@@ -145,4 +142,3 @@ export const HeroSection = ({
     </AuroraBackground>
   );
 };
-

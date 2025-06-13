@@ -9,10 +9,10 @@ interface FinalCTASectionProps {
 
 export const FinalCTASection = ({ images }: FinalCTASectionProps) => {
   return (
-    <section id="consultation-form" className="py-20 px-4 bg-[#363331] text-[#F9F7F6] relative overflow-hidden" style={{ fontFamily: 'Inter, system-ui, sans-serif' }}>
+    <section id="consultation-form" className="py-20 px-4 bg-[#363331] text-[#F9F7F6] relative overflow-hidden">
       <div className="max-w-4xl mx-auto text-center relative z-10">
         <motion.h2 
-          className="text-3xl md:text-4xl font-bold mb-6"
+          className="text-3xl md:text-4xl font-bold mb-6 font-right-grotesk"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -22,7 +22,7 @@ export const FinalCTASection = ({ images }: FinalCTASectionProps) => {
         </motion.h2>
         
         <motion.p 
-          className="text-xl mb-8 leading-relaxed text-[#C6C0BE]"
+          className="text-xl mb-8 leading-relaxed text-[#C6C0BE] font-aeonik"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
@@ -46,7 +46,7 @@ export const FinalCTASection = ({ images }: FinalCTASectionProps) => {
           >
             <InteractiveHoverButton 
               variant="light"
-              className="bg-[#F9F7F6] text-[#363331] px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl"
+              className="bg-[#F9F7F6] text-[#363331] px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl font-aeonik"
             >
               <span className="flex items-center gap-2">
                 Quero Minha Consultoria Gratuita
@@ -56,7 +56,7 @@ export const FinalCTASection = ({ images }: FinalCTASectionProps) => {
           </motion.div>
           
           <motion.p 
-            className="text-sm text-[#C6C0BE] flex items-center justify-center gap-2"
+            className="text-sm text-[#C6C0BE] flex items-center justify-center gap-2 font-aeonik"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.3 }}
