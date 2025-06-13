@@ -1,4 +1,5 @@
-import { FloatingImages } from "./FloatingImages";
+
+import { motion } from "motion/react";
 
 interface ProcessSectionProps {
   images: string[];
@@ -7,23 +8,44 @@ interface ProcessSectionProps {
 export const ProcessSection = ({ images }: ProcessSectionProps) => {
   return (
     <section className="py-20 px-4 bg-[#F9F7F6] relative overflow-hidden" style={{ fontFamily: 'Inter, system-ui, sans-serif' }}>
-      <FloatingImages images={images} />
-      
       <div className="max-w-5xl mx-auto relative z-10">
-        <div className="text-center mb-16">
+        <motion.div 
+          className="text-center mb-16"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
           <h2 className="text-3xl md:text-4xl font-bold text-[#363331] mb-4">
             Como Funciona Nossa Análise Estratégica
           </h2>
-        </div>
+        </motion.div>
 
         <div className="space-y-12">
-          <div className="flex flex-col md:flex-row items-center gap-8">
+          <motion.div 
+            className="flex flex-col md:flex-row items-center gap-8"
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            viewport={{ once: true }}
+            whileHover={{ scale: 1.02 }}
+          >
             <div className="flex-shrink-0">
-              <div className="w-20 h-20 bg-[#363331] rounded-full flex items-center justify-center text-[#F9F7F6] font-bold text-2xl">
+              <motion.div 
+                className="w-20 h-20 bg-[#363331] rounded-full flex items-center justify-center text-[#F9F7F6] font-bold text-2xl"
+                whileHover={{ rotate: 360, scale: 1.1 }}
+                transition={{ duration: 0.5 }}
+              >
                 1
-              </div>
+              </motion.div>
             </div>
-            <div className="flex-1 text-center md:text-left">
+            <motion.div 
+              className="flex-1 text-center md:text-left"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true }}
+            >
               <h3 className="text-2xl font-bold text-[#363331] mb-3">
                 Preencha sua Candidatura
               </h3>
@@ -31,16 +53,33 @@ export const ProcessSection = ({ images }: ProcessSectionProps) => {
                 Clique no botão abaixo e preencha o formulário. Suas respostas são o ponto de partida 
                 para minha análise aprofundada do seu negócio.
               </p>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
 
-          <div className="flex flex-col md:flex-row items-center gap-8">
+          <motion.div 
+            className="flex flex-col md:flex-row items-center gap-8"
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            viewport={{ once: true }}
+            whileHover={{ scale: 1.02 }}
+          >
             <div className="flex-shrink-0">
-              <div className="w-20 h-20 bg-[#363331] rounded-full flex items-center justify-center text-[#F9F7F6] font-bold text-2xl">
+              <motion.div 
+                className="w-20 h-20 bg-[#363331] rounded-full flex items-center justify-center text-[#F9F7F6] font-bold text-2xl"
+                whileHover={{ rotate: 360, scale: 1.1 }}
+                transition={{ duration: 0.5 }}
+              >
                 2
-              </div>
+              </motion.div>
             </div>
-            <div className="flex-1 text-center md:text-left">
+            <motion.div 
+              className="flex-1 text-center md:text-left"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              viewport={{ once: true }}
+            >
               <h3 className="text-2xl font-bold text-[#363331] mb-3">
                 Análise Pessoal do seu Perfil
               </h3>
@@ -48,16 +87,33 @@ export const ProcessSection = ({ images }: ProcessSectionProps) => {
                 Vou analisar pessoalmente suas respostas e seu perfil para criar um diagnóstico inicial, 
                 identificando os principais pontos de melhoria ainda antes da nossa conversa.
               </p>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
 
-          <div className="flex flex-col md:flex-row items-center gap-8">
+          <motion.div 
+            className="flex flex-col md:flex-row items-center gap-8"
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            viewport={{ once: true }}
+            whileHover={{ scale: 1.02 }}
+          >
             <div className="flex-shrink-0">
-              <div className="w-20 h-20 bg-[#363331] rounded-full flex items-center justify-center text-[#F9F7F6] font-bold text-2xl">
+              <motion.div 
+                className="w-20 h-20 bg-[#363331] rounded-full flex items-center justify-center text-[#F9F7F6] font-bold text-2xl"
+                whileHover={{ rotate: 360, scale: 1.1 }}
+                transition={{ duration: 0.5 }}
+              >
                 3
-              </div>
+              </motion.div>
             </div>
-            <div className="flex-1 text-center md:text-left">
+            <motion.div 
+              className="flex-1 text-center md:text-left"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              viewport={{ once: true }}
+            >
               <h3 className="text-2xl font-bold text-[#363331] mb-3">
                 Contato Direto via WhatsApp para Agendamento
               </h3>
@@ -65,8 +121,8 @@ export const ProcessSection = ({ images }: ProcessSectionProps) => {
                 Com a pré-análise em mãos, eu ou minha equipe entraremos em contato diretamente via WhatsApp 
                 (em até 24h úteis) para apresentar os primeiros insights e agendar o melhor dia e horário para sua sessão.
               </p>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
       </div>
     </section>

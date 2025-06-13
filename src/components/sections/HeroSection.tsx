@@ -1,8 +1,8 @@
+
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowRight } from "lucide-react";
 import { TextRotate } from "@/components/ui/text-rotate";
 import { motion, LayoutGroup } from "motion/react";
-import { FloatingImages } from "./FloatingImages";
 
 interface HeroSectionProps {
   onScrollToForm: () => void;
@@ -13,8 +13,6 @@ interface HeroSectionProps {
 export const HeroSection = ({ onScrollToForm, images, rotatingTexts }: HeroSectionProps) => {
   return (
     <section className="w-full h-screen overflow-hidden md:overflow-visible flex flex-col items-center justify-center relative">
-      <FloatingImages images={images} />
-
       <div className="flex flex-col justify-center items-center w-[250px] sm:w-[300px] md:w-[500px] lg:w-[700px] z-50 pointer-events-auto px-4">
         <motion.h1
           className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl text-center w-full justify-center items-center flex-col flex whitespace-pre leading-tight tracking-tight space-y-1 md:space-y-4 font-bold"
@@ -60,11 +58,13 @@ export const HeroSection = ({ onScrollToForm, images, rotatingTexts }: HeroSecti
               delay: 0.7,
               scale: { duration: 0.2 },
             }}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
           >
             <Button 
               onClick={onScrollToForm}
               size="lg" 
-              className="bg-[#363331] hover:bg-[#2a2826] text-white px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+              className="bg-[#363331] hover:bg-[#2a2826] text-white px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
               style={{ fontFamily: 'Inter, system-ui, sans-serif' }}
             >
               Quero Minha Consultoria Gratuita
