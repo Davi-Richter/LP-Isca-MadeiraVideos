@@ -17,9 +17,16 @@ const Index = () => {
     "/lovable-uploads/e52267df-9cc9-43cd-9986-91e17a50b5b7.png",
   ];
 
+  const rotatingTexts = [
+    "trends.",
+    "dancinhas.",
+    "amadorismo.",
+    "perder tempo.",
+  ];
+
   return (
     <div style={{ fontFamily: 'Inter, system-ui, sans-serif' }} className="min-h-screen bg-[#F9F7F6] text-[#363331]">
-      <HeroSection onScrollToForm={scrollToForm} images={exampleImages} />
+      <HeroSection onScrollToForm={scrollToForm} images={exampleImages} rotatingTexts={rotatingTexts} />
       <BenefitsSection />
       <ProcessSection />
       <FinalCTASection />

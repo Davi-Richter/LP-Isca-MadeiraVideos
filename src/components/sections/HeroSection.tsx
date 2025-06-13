@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowRight } from "lucide-react";
 import { TextRotate } from "@/components/ui/text-rotate";
@@ -8,9 +7,10 @@ import { FloatingImages } from "./FloatingImages";
 interface HeroSectionProps {
   onScrollToForm: () => void;
   images: string[];
+  rotatingTexts: string[];
 }
 
-export const HeroSection = ({ onScrollToForm, images }: HeroSectionProps) => {
+export const HeroSection = ({ onScrollToForm, images, rotatingTexts }: HeroSectionProps) => {
   return (
     <section className="w-full h-screen overflow-hidden md:overflow-visible flex flex-col items-center justify-center relative">
       <FloatingImages images={images} />
@@ -26,12 +26,7 @@ export const HeroSection = ({ onScrollToForm, images }: HeroSectionProps) => {
           <LayoutGroup>
             <motion.span layout className="flex whitespace-pre">
               <TextRotate
-                texts={[
-                  "trends.",
-                  "dancinhas.",
-                  "amadorismo.",
-                  "perder tempo.",
-                ]}
+                texts={rotatingTexts}
                 mainClassName="overflow-hidden pr-3 text-[#C6C0BE] py-0 pb-2 md:pb-4 rounded-xl"
                 staggerDuration={0.03}
                 staggerFrom="last"
