@@ -60,7 +60,7 @@ const AnimatedText = React.forwardRef<HTMLDivElement, AnimatedTextProps>(
             width="100%"
             height="20"
             viewBox="0 0 300 20"
-            className={cn("absolute -bottom-4 left-0", underlineClassName)}
+            className={cn("absolute -bottom-1 left-0", underlineClassName)}
           >
             <motion.path
               d={underlinePath}
