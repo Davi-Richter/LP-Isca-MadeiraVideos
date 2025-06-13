@@ -1,9 +1,7 @@
-
 import { CheckCircle, ArrowRight } from "lucide-react";
 import { TextRotate } from "@/components/ui/text-rotate";
 import { SpinningLogos } from "@/components/ui/spinning-logos";
 import { InteractiveHoverButton } from "@/components/ui/interactive-hover-button";
-import { AnimatedText } from "@/components/ui/animated-underline-text-one";
 import { motion, LayoutGroup } from "motion/react";
 
 interface HeroSectionProps {
@@ -46,13 +44,7 @@ export const HeroSection = ({ onScrollToForm, images, rotatingTexts }: HeroSecti
         >
           <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#363331] leading-tight tracking-tight">
             <span>Atraia clientes com vídeos que realmente </span>
-            <AnimatedText
-              text="vendem"
-              textClassName="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#363331] leading-tight tracking-tight inline-block"
-              underlineClassName="text-[#363331]"
-              underlineDuration={2}
-              className="inline-block"
-            />
+            <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#363331] leading-tight tracking-tight">vendem</span>
             <span>.</span>
           </div>
         </motion.div>
