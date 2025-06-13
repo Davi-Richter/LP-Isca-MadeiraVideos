@@ -61,7 +61,7 @@ export const SpinningLogos: React.FC = () => {
             <img 
               src="/lovable-uploads/c13f40f6-288e-4f74-bb4b-0c73571c3042.png" 
               alt="Logo" 
-              className="w-20 h-20 sm:w-24 sm:h-24 lg:w-40 lg:h-40 object-contain"
+              className="w-20 h-20 sm:w-24 sm:h-24 lg:w-48 lg:h-48 xl:w-56 xl:h-56 object-contain"
             />
           </div>
         </div>
