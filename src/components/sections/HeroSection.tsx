@@ -1,8 +1,8 @@
 
-import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowRight } from "lucide-react";
 import { TextRotate } from "@/components/ui/text-rotate";
 import { SpinningLogos } from "@/components/ui/spinning-logos";
+import { InteractiveHoverButton } from "@/components/ui/interactive-hover-button";
 import { motion, LayoutGroup } from "motion/react";
 
 interface HeroSectionProps {
@@ -63,15 +63,17 @@ export const HeroSection = ({ onScrollToForm, images, rotatingTexts }: HeroSecti
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <Button 
+            <InteractiveHoverButton 
               onClick={onScrollToForm}
-              size="lg" 
-              className="bg-[#363331] hover:bg-[#2a2826] text-white px-6 lg:px-8 py-3 lg:py-4 text-sm sm:text-base lg:text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+              variant="dark"
+              className="bg-[#363331] text-white px-6 lg:px-8 py-3 lg:py-4 text-sm sm:text-base lg:text-lg font-semibold rounded-full shadow-lg hover:shadow-xl"
               style={{ fontFamily: 'Inter, system-ui, sans-serif' }}
             >
-              Quero Minha Consultoria Gratuita
-              <ArrowRight className="ml-2 h-4 w-4 lg:h-5 lg:w-5" />
-            </Button>
+              <span className="flex items-center gap-2">
+                Quero Minha Consultoria Gratuita
+                <ArrowRight className="h-4 w-4 lg:h-5 lg:w-5" />
+              </span>
+            </InteractiveHoverButton>
           </motion.div>
           
           <motion.p

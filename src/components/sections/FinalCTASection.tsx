@@ -1,6 +1,6 @@
 
-import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowRight } from "lucide-react";
+import { InteractiveHoverButton } from "@/components/ui/interactive-hover-button";
 import { motion } from "motion/react";
 
 interface FinalCTASectionProps {
@@ -44,13 +44,15 @@ export const FinalCTASection = ({ images }: FinalCTASectionProps) => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <Button 
-              size="lg" 
-              className="bg-[#F9F7F6] text-[#363331] hover:bg-[#C6C0BE] px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+            <InteractiveHoverButton 
+              variant="light"
+              className="bg-[#F9F7F6] text-[#363331] px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl"
             >
-              Quero Minha Consultoria Gratuita
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+              <span className="flex items-center gap-2">
+                Quero Minha Consultoria Gratuita
+                <ArrowRight className="h-5 w-5" />
+              </span>
+            </InteractiveHoverButton>
           </motion.div>
           
           <motion.p 
