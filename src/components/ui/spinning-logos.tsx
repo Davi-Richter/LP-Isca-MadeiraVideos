@@ -33,7 +33,7 @@ export const SpinningLogos: React.FC = () => {
         }}
         className="relative rounded-full bg-[#F9F7F6]/80 shadow-lg border border-[#C6C0BE]/30"
       >
-        <div className="absolute inset-0 animate-spin-slow">
+        <div className="absolute inset-0 animate-spin-slow lg:scale-110 xl:scale-125">
           {logos.map((logo, index) => {
             const angle = (360 / logos.length) * index;
             return (
