@@ -3,7 +3,7 @@ import { CheckCircle, ArrowRight } from "lucide-react";
 import { TextRotate } from "@/components/ui/text-rotate";
 import { SpinningLogos } from "@/components/ui/spinning-logos";
 import { InteractiveHoverButton } from "@/components/ui/interactive-hover-button";
-import { AnimatedText } from "@/components/ui/animated-shiny-text";
+import { AnimatedText } from "@/components/ui/animated-underline-text-one";
 import { motion, LayoutGroup } from "motion/react";
 
 interface HeroSectionProps {
@@ -36,14 +36,26 @@ export const HeroSection = ({ onScrollToForm, images, rotatingTexts }: HeroSecti
               />
             </motion.span>
           </LayoutGroup>
-          <AnimatedText
-            text="Atraia clientes com vídeos que realmente vendem."
-            gradientColors="linear-gradient(90deg, #363331, #C6C0BE, #363331)"
-            gradientAnimationDuration={2}
-            className="py-0"
-            textClassName="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-tight tracking-tight font-bold text-center lg:text-left"
-          />
         </motion.h1>
+        
+        <motion.div
+          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 20 }}
+          transition={{ duration: 0.2, ease: "easeOut", delay: 0.4 }}
+          className="mt-2 md:mt-3 lg:mt-4 text-center lg:text-left"
+        >
+          <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#363331] leading-tight tracking-tight">
+            <span>Atraia clientes com vídeos que realmente </span>
+            <AnimatedText
+              text="vendem"
+              textClassName="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#363331] leading-tight tracking-tight inline-block"
+              underlineClassName="text-[#363331]"
+              underlineDuration={2}
+              className="inline-block"
+            />
+            <span>.</span>
+          </div>
+        </motion.div>
         
         <motion.p
           className="text-sm sm:text-base md:text-lg lg:text-xl text-center lg:text-left pt-3 sm:pt-4 md:pt-5 lg:pt-6 leading-relaxed max-w-xl lg:mx-0 mx-auto"
