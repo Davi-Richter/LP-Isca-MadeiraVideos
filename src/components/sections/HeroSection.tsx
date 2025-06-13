@@ -3,6 +3,7 @@ import { CheckCircle, ArrowRight } from "lucide-react";
 import { TextRotate } from "@/components/ui/text-rotate";
 import { SpinningLogos } from "@/components/ui/spinning-logos";
 import { InteractiveHoverButton } from "@/components/ui/interactive-hover-button";
+import { AnimatedText } from "@/components/ui/animated-shiny-text";
 import { motion, LayoutGroup } from "motion/react";
 
 interface HeroSectionProps {
@@ -35,10 +36,13 @@ export const HeroSection = ({ onScrollToForm, images, rotatingTexts }: HeroSecti
               />
             </motion.span>
           </LayoutGroup>
-          <span className="text-[#363331]">
-            Atraia clientes com vídeos<br />
-            que realmente vendem.
-          </span>
+          <AnimatedText
+            text="Atraia clientes com vídeos que realmente vendem."
+            gradientColors="linear-gradient(90deg, #363331, #C6C0BE, #363331)"
+            gradientAnimationDuration={2}
+            className="py-0"
+            textClassName="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-tight tracking-tight font-bold text-center lg:text-left"
+          />
         </motion.h1>
         
         <motion.p
