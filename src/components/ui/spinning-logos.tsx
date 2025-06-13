@@ -1,4 +1,3 @@
-
 "use client"
 
 import React from 'react';
@@ -31,7 +30,7 @@ export const SpinningLogos: React.FC = () => {
           width: radiusToCenterOfIcons * 2 + iconWrapperWidth + ringPadding,
           height: radiusToCenterOfIcons * 2 + iconWrapperWidth + ringPadding,
         }}
-        className="relative rounded-full bg-[#F9F7F6]/80 shadow-lg border border-[#C6C0BE]/30"
+        className="relative rounded-full bg-[#F9F7F6]/80 shadow-lg border border-[#C6C0BE]/30 scale-[0.4] sm:scale-60 md:scale-75 lg:scale-100"
       >
         <div className="absolute inset-0 animate-spin-slow">
           {logos.map((logo, index) => {
