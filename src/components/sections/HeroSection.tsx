@@ -1,3 +1,4 @@
+
 import { CheckCircle, ArrowRight } from "lucide-react";
 import { TextRotate } from "@/components/ui/text-rotate";
 import { SpinningLogos } from "@/components/ui/spinning-logos";
@@ -35,7 +36,7 @@ export const HeroSection = ({
         }}>
             <span>Chega de </span>
             <LayoutGroup>
-              <motion.span layout className="flex whitespace-pre">
+              <motion.span layout className="flex whitespace-pre w-48 sm:w-56 md:w-64 lg:w-72 xl:w-80">
                 <TextRotate texts={rotatingTexts} mainClassName="overflow-hidden pr-3 text-[#C6C0BE] py-0 pb-1 md:pb-2 lg:pb-3 rounded-xl" staggerDuration={0.03} staggerFrom="last" rotationInterval={3000} transition={{
                 type: "spring",
                 damping: 30,
