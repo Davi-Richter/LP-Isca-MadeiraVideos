@@ -42,14 +42,19 @@ export const HeroSection = ({ onScrollToForm, images, rotatingTexts }: HeroSecti
           animate={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: 20 }}
           transition={{ duration: 0.2, ease: "easeOut", delay: 0.4 }}
-          className="mt-2 md:mt-3 lg:mt-4"
+          className="mt-2 md:mt-3 lg:mt-4 text-center lg:text-left"
         >
-          <AnimatedText
-            text="Atraia clientes com vídeos que realmente vendem."
-            textClassName="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-center lg:text-left text-[#363331] leading-tight tracking-tight"
-            underlineClassName="text-[#363331]"
-            underlineDuration={2}
-          />
+          <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#363331] leading-tight tracking-tight">
+            <span>Atraia clientes com vídeos que realmente </span>
+            <AnimatedText
+              text="vendem"
+              textClassName="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#363331] leading-tight tracking-tight inline-block"
+              underlineClassName="text-[#363331]"
+              underlineDuration={2}
+              className="inline-block"
+            />
+            <span>.</span>
+          </div>
         </motion.div>
         
         <motion.p
