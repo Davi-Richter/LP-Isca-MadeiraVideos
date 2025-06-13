@@ -13,11 +13,11 @@ interface HeroSectionProps {
 
 export const HeroSection = ({ onScrollToForm, images, rotatingTexts }: HeroSectionProps) => {
   return (
-    <section className="w-full min-h-screen overflow-hidden md:overflow-visible flex flex-col lg:flex-row items-center justify-center relative px-4 py-8 lg:py-0">
+    <section className="w-full min-h-screen overflow-hidden md:overflow-visible flex flex-col lg:flex-row items-center justify-center relative px-4 py-6 lg:py-8 gap-6 lg:gap-12">
       {/* Conteúdo principal */}
-      <div className="flex flex-col justify-center items-center lg:items-start w-full lg:w-1/2 z-50 pointer-events-auto order-2 lg:order-1">
+      <div className="flex flex-col justify-center items-center lg:items-start w-full lg:w-1/2 z-50 pointer-events-auto order-2 lg:order-1 max-w-2xl lg:max-w-none">
         <motion.h1
-          className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-center lg:text-left w-full justify-center lg:justify-start items-center lg:items-start flex-col flex whitespace-pre leading-tight tracking-tight space-y-1 md:space-y-4 font-bold"
+          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center lg:text-left w-full justify-center lg:justify-start items-center lg:items-start flex-col flex whitespace-pre leading-tight tracking-tight space-y-1 md:space-y-2 lg:space-y-3 font-bold"
           animate={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: 20 }}
           transition={{ duration: 0.2, ease: "easeOut", delay: 0.3 }}
@@ -27,7 +27,7 @@ export const HeroSection = ({ onScrollToForm, images, rotatingTexts }: HeroSecti
             <motion.span layout className="flex whitespace-pre">
               <TextRotate
                 texts={rotatingTexts}
-                mainClassName="overflow-hidden pr-3 text-[#C6C0BE] py-0 pb-2 md:pb-4 rounded-xl"
+                mainClassName="overflow-hidden pr-3 text-[#C6C0BE] py-0 pb-1 md:pb-2 lg:pb-3 rounded-xl"
                 staggerDuration={0.03}
                 staggerFrom="last"
                 rotationInterval={3000}
@@ -42,7 +42,7 @@ export const HeroSection = ({ onScrollToForm, images, rotatingTexts }: HeroSecti
         </motion.h1>
         
         <motion.p
-          className="text-sm sm:text-base md:text-lg lg:text-xl text-center lg:text-left pt-4 sm:pt-6 md:pt-8 lg:pt-10 leading-relaxed max-w-xl lg:mx-0 mx-auto"
+          className="text-sm sm:text-base md:text-lg lg:text-xl text-center lg:text-left pt-3 sm:pt-4 md:pt-5 lg:pt-6 leading-relaxed max-w-xl lg:mx-0 mx-auto"
           animate={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: 20 }}
           transition={{ duration: 0.2, ease: "easeOut", delay: 0.5 }}
@@ -50,7 +50,7 @@ export const HeroSection = ({ onScrollToForm, images, rotatingTexts }: HeroSecti
           Consultoria gratuita para transformar seu perfil numa máquina de captação de clientes.
         </motion.p>
 
-        <div className="flex flex-col justify-center lg:justify-start items-center lg:items-start mt-8 sm:mt-12 md:mt-16 lg:mt-20 space-y-4">
+        <div className="flex flex-col justify-center lg:justify-start items-center lg:items-start mt-6 sm:mt-8 md:mt-10 lg:mt-12 space-y-3">
           <motion.div
             animate={{ opacity: 1, y: 0 }}
             initial={{ opacity: 0, y: 20 }}
@@ -66,7 +66,7 @@ export const HeroSection = ({ onScrollToForm, images, rotatingTexts }: HeroSecti
             <Button 
               onClick={onScrollToForm}
               size="lg" 
-              className="bg-[#363331] hover:bg-[#2a2826] text-white px-6 lg:px-8 py-3 lg:py-4 text-base lg:text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+              className="bg-[#363331] hover:bg-[#2a2826] text-white px-6 lg:px-8 py-3 lg:py-4 text-sm sm:text-base lg:text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
               style={{ fontFamily: 'Inter, system-ui, sans-serif' }}
             >
               Quero Minha Consultoria Gratuita
@@ -87,12 +87,12 @@ export const HeroSection = ({ onScrollToForm, images, rotatingTexts }: HeroSecti
       </div>
 
       {/* SpinningLogos */}
-      <div className="flex justify-center items-center w-full lg:w-1/2 order-1 lg:order-2 mb-8 lg:mb-0">
+      <div className="flex justify-center items-center w-full lg:w-1/2 order-1 lg:order-2 mb-4 lg:mb-0">
         <motion.div
           animate={{ opacity: 1, scale: 1 }}
           initial={{ opacity: 0, scale: 0.8 }}
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
-          className="transform scale-75 sm:scale-90 lg:scale-100"
+          className="transform scale-60 sm:scale-75 md:scale-85 lg:scale-90 xl:scale-100"
         >
           <SpinningLogos />
         </motion.div>
