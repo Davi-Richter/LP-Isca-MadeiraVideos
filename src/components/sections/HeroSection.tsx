@@ -15,9 +15,9 @@ export const HeroSection = ({ onScrollToForm, images, rotatingTexts }: HeroSecti
   return (
     <section className="w-full min-h-screen overflow-hidden md:overflow-visible flex flex-col lg:flex-row items-center justify-center relative px-4 py-8 lg:py-0">
       {/* Conteúdo principal */}
-      <div className="flex flex-col justify-center items-center w-full lg:w-1/2 z-50 pointer-events-auto order-2 lg:order-1">
+      <div className="flex flex-col justify-center items-center lg:items-start w-full lg:w-1/2 z-50 pointer-events-auto order-2 lg:order-1">
         <motion.h1
-          className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-center w-full justify-center items-center flex-col flex whitespace-pre leading-tight tracking-tight space-y-1 md:space-y-4 font-bold"
+          className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-center lg:text-left w-full justify-center lg:justify-start items-center lg:items-start flex-col flex whitespace-pre leading-tight tracking-tight space-y-1 md:space-y-4 font-bold"
           animate={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: 20 }}
           transition={{ duration: 0.2, ease: "easeOut", delay: 0.3 }}
@@ -42,7 +42,7 @@ export const HeroSection = ({ onScrollToForm, images, rotatingTexts }: HeroSecti
         </motion.h1>
         
         <motion.p
-          className="text-sm sm:text-base md:text-lg lg:text-xl text-center pt-4 sm:pt-6 md:pt-8 lg:pt-10 leading-relaxed max-w-xl mx-auto"
+          className="text-sm sm:text-base md:text-lg lg:text-xl text-center lg:text-left pt-4 sm:pt-6 md:pt-8 lg:pt-10 leading-relaxed max-w-xl lg:mx-0 mx-auto"
           animate={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: 20 }}
           transition={{ duration: 0.2, ease: "easeOut", delay: 0.5 }}
@@ -50,7 +50,7 @@ export const HeroSection = ({ onScrollToForm, images, rotatingTexts }: HeroSecti
           Consultoria gratuita para transformar seu perfil numa máquina de captação de clientes.
         </motion.p>
 
-        <div className="flex flex-col justify-center items-center mt-8 sm:mt-12 md:mt-16 lg:mt-20 space-y-4">
+        <div className="flex flex-col justify-center lg:justify-start items-center lg:items-start mt-8 sm:mt-12 md:mt-16 lg:mt-20 space-y-4">
           <motion.div
             animate={{ opacity: 1, y: 0 }}
             initial={{ opacity: 0, y: 20 }}
@@ -75,7 +75,7 @@ export const HeroSection = ({ onScrollToForm, images, rotatingTexts }: HeroSecti
           </motion.div>
           
           <motion.p
-            className="text-xs sm:text-sm text-[#C6C0BE] flex items-center justify-center gap-2 text-center"
+            className="text-xs sm:text-sm text-[#C6C0BE] flex items-center justify-center lg:justify-start gap-2 text-center lg:text-left"
             animate={{ opacity: 1, y: 0 }}
             initial={{ opacity: 0, y: 20 }}
             transition={{ duration: 0.2, ease: "easeOut", delay: 0.9 }}
