@@ -27,9 +27,9 @@ const Index = () => {
   return (
     <div style={{ fontFamily: 'Inter, system-ui, sans-serif' }} className="min-h-screen bg-[#F9F7F6] text-[#363331]">
       <HeroSection onScrollToForm={scrollToForm} images={exampleImages} rotatingTexts={rotatingTexts} />
-      <BenefitsSection />
-      <ProcessSection />
-      <FinalCTASection />
+      <BenefitsSection images={exampleImages} />
+      <ProcessSection images={exampleImages} />
+      <FinalCTASection images={exampleImages} />
     </div>
   );
 };

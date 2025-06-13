@@ -1,11 +1,17 @@
-
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowRight } from "lucide-react";
+import { FloatingImages } from "./FloatingImages";
 
-export const FinalCTASection = () => {
+interface FinalCTASectionProps {
+  images: string[];
+}
+
+export const FinalCTASection = ({ images }: FinalCTASectionProps) => {
   return (
-    <section id="consultation-form" className="py-20 px-4 bg-[#363331] text-[#F9F7F6]" style={{ fontFamily: 'Inter, system-ui, sans-serif' }}>
-      <div className="max-w-4xl mx-auto text-center">
+    <section id="consultation-form" className="py-20 px-4 bg-[#363331] text-[#F9F7F6] relative overflow-hidden" style={{ fontFamily: 'Inter, system-ui, sans-serif' }}>
+      <FloatingImages images={images} />
+      
+      <div className="max-w-4xl mx-auto text-center relative z-10">
         <h2 className="text-3xl md:text-4xl font-bold mb-6">
           Pronto para jogar o jogo certo?
         </h2>

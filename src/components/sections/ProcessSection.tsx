@@ -1,8 +1,15 @@
+import { FloatingImages } from "./FloatingImages";
 
-export const ProcessSection = () => {
+interface ProcessSectionProps {
+  images: string[];
+}
+
+export const ProcessSection = ({ images }: ProcessSectionProps) => {
   return (
-    <section className="py-20 px-4 bg-[#F9F7F6]" style={{ fontFamily: 'Inter, system-ui, sans-serif' }}>
-      <div className="max-w-5xl mx-auto">
+    <section className="py-20 px-4 bg-[#F9F7F6] relative overflow-hidden" style={{ fontFamily: 'Inter, system-ui, sans-serif' }}>
+      <FloatingImages images={images} />
+      
+      <div className="max-w-5xl mx-auto relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-[#363331] mb-4">
             Como Funciona Nossa Análise Estratégica
