@@ -211,7 +211,7 @@ const TextRotate = forwardRef<TextRotateRef, TextRotateProps>(
               return (
                 <span
                   key={wordIndex}
-                  className={cn("inline-flex", splitLevelClassName)}
+                  className={cn("inline-flex whitespace-nowrap", splitLevelClassName)}
                 >
                   {wordObj.characters.map((char, charIndex) => (
                     <motion.span
