@@ -1,4 +1,3 @@
-
 "use client"
 
 import React from 'react';
@@ -13,7 +12,7 @@ import { cn } from '@/lib/utils';
 export const SpinningLogos: React.FC = () => {
   const radiusToCenterOfIcons = 160; // Aumentado de 120 para 160
   const iconWrapperWidth = 65; // Aumentado de 50 para 65
-  const ringPadding = 20; // Diminuído de 40 para 20
+  const ringPadding = 5; // Diminuído consideravelmente de 20 para 5
 
   const toRadians = (degrees: number): number => (Math.PI / 180) * degrees;
 
@@ -25,7 +24,7 @@ export const SpinningLogos: React.FC = () => {
   ];
 
   return (
-    <div className="flex justify-center items-center">
+    <div className="flex justify-center items-center p-2">
       <div
         style={{
           width: radiusToCenterOfIcons * 2 + iconWrapperWidth + ringPadding,
