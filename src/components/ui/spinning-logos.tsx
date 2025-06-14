@@ -13,7 +13,7 @@ import { cn } from '@/lib/utils';
 export const SpinningLogos: React.FC = () => {
   const radiusToCenterOfIcons = 160; // Aumentado de 120 para 160
   const iconWrapperWidth = 65; // Aumentado de 50 para 65
-  const ringPadding = 40; // Aumentado de 30 para 40
+  const ringPadding = 20; // Diminuído de 40 para 20
 
   const toRadians = (degrees: number): number => (Math.PI / 180) * degrees;
 
