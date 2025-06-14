@@ -1,4 +1,3 @@
-
 "use client"
 
 import React from 'react';
@@ -25,7 +24,7 @@ export const SpinningLogos: React.FC = () => {
   ];
 
   return (
-    <div className="flex justify-center items-center">
+    <div className="flex justify-center items-center p-1 sm:p-0">
       <div
         style={{
           width: radiusToCenterOfIcons * 2 + iconWrapperWidth + ringPadding,
