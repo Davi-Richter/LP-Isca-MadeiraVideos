@@ -24,7 +24,7 @@ export const SpinningLogos: React.FC = () => {
   ];
 
   return (
-    <div className="flex justify-center items-center p-1 sm:p-0">
+    <div className="flex justify-center items-center px-0.5 py-0.5 sm:p-0">
       <div
         style={{
           width: radiusToCenterOfIcons * 2 + iconWrapperWidth + ringPadding,
