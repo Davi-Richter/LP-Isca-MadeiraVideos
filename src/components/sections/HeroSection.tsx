@@ -20,8 +20,8 @@ export const HeroSection = ({
 }: HeroSectionProps) => {
   return (
     <AuroraBackground className="min-h-screen bg-[#F9F7F6]">
-      <section className="w-full min-h-screen overflow-hidden md:overflow-visible flex flex-col lg:flex-row items-center justify-start lg:justify-center relative px-4 lg:px-16 xl:px-24 pt-16 pb-8 lg:py-8 gap-8 lg:gap-12">
-        {/* SpinningLogos - posicionado no topo para mobile */}
+      <section className="w-full min-h-screen overflow-hidden md:overflow-visible flex flex-col lg:flex-row items-center justify-center lg:justify-center relative px-4 lg:px-16 xl:px-24 py-8 lg:py-8 gap-6 lg:gap-12">
+        {/* SpinningLogos - posicionado no topo centralizado para mobile */}
         <div className="flex justify-center items-center w-full lg:w-1/2 order-1 lg:order-2">
           <motion.div animate={{
           opacity: 1,
@@ -33,7 +33,7 @@ export const HeroSection = ({
           duration: 0.6,
           ease: "easeOut",
           delay: 0.4
-        }} className="transform scale-75 sm:scale-85 md:scale-90 lg:scale-110 xl:scale-125">
+        }} className="transform scale-90 sm:scale-95 md:scale-100 lg:scale-110 xl:scale-125">
             <SpinningLogos />
           </motion.div>
         </div>
