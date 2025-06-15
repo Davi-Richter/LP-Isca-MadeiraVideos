@@ -5,9 +5,10 @@ import { motion } from "motion/react";
 
 interface FinalCTASectionProps {
   images: string[];
+  onButtonClick: () => void;
 }
 
-export const FinalCTASection = ({ images }: FinalCTASectionProps) => {
+export const FinalCTASection = ({ images, onButtonClick }: FinalCTASectionProps) => {
   return (
     <section id="consultation-form" className="py-20 px-4 bg-[#363331] text-[#F9F7F6] relative overflow-hidden">
       <div className="max-w-4xl mx-auto text-center relative z-10">
@@ -45,6 +46,7 @@ export const FinalCTASection = ({ images }: FinalCTASectionProps) => {
             whileTap={{ scale: 0.95 }}
           >
             <InteractiveHoverButton 
+              onClick={onButtonClick}
               variant="light"
               className="bg-[#F9F7F6] text-[#363331] px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl font-aeonik"
             >

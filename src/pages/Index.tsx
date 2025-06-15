@@ -5,8 +5,8 @@ import { ProcessSection } from "@/components/sections/ProcessSection";
 import { FinalCTASection } from "@/components/sections/FinalCTASection";
 
 const Index = () => {
-  const scrollToForm = () => {
-    document.getElementById('consultation-form')?.scrollIntoView({ behavior: 'smooth' });
+  const openConsultationLink = () => {
+    window.open('https://tally.so/r/nrbk25', '_blank', 'noopener,noreferrer');
   };
 
   const exampleImages = [
@@ -25,10 +25,10 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-[#F9F7F6] text-[#363331]">
-      <HeroSection onScrollToForm={scrollToForm} images={exampleImages} rotatingTexts={rotatingTexts} />
+      <HeroSection onButtonClick={openConsultationLink} images={exampleImages} rotatingTexts={rotatingTexts} />
       <BenefitsSection images={exampleImages} />
       <ProcessSection images={exampleImages} />
-      <FinalCTASection images={exampleImages} />
+      <FinalCTASection onButtonClick={openConsultationLink} images={exampleImages} />
     </div>
   );
 };

@@ -8,13 +8,13 @@ import { AuroraBackground } from "@/components/ui/aurora-background";
 import { motion, LayoutGroup } from "motion/react";
 
 interface HeroSectionProps {
-  onScrollToForm: () => void;
+  onButtonClick: () => void;
   images: string[];
   rotatingTexts: string[];
 }
 
 export const HeroSection = ({
-  onScrollToForm,
+  onButtonClick,
   images,
   rotatingTexts
 }: HeroSectionProps) => {
@@ -114,7 +114,7 @@ export const HeroSection = ({
           }} whileTap={{
             scale: 0.95
           }}>
-              <InteractiveHoverButton onClick={onScrollToForm} variant="dark" className="bg-[#363331] text-white px-6 lg:px-8 py-3 lg:py-4 text-sm sm:text-base lg:text-lg font-semibold rounded-full shadow-lg hover:shadow-xl font-aeonik">
+              <InteractiveHoverButton onClick={onButtonClick} variant="dark" className="bg-[#363331] text-white px-6 lg:px-8 py-3 lg:py-4 text-sm sm:text-base lg:text-lg font-semibold rounded-full shadow-lg hover:shadow-xl font-aeonik">
                 <span className="flex items-center gap-2">
                   Quero Minha Consultoria Gratuita
                   <ArrowRight className="h-4 w-4 lg:h-5 lg:w-5" />
