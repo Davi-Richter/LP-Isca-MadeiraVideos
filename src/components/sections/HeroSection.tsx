@@ -1,4 +1,3 @@
-
 import { CheckCircle, ArrowRight } from "lucide-react";
 import { TextRotate } from "@/components/ui/text-rotate";
 import { SpinningLogos } from "@/components/ui/spinning-logos";
@@ -21,8 +20,25 @@ export const HeroSection = ({
   return (
     <AuroraBackground className="min-h-screen bg-[#F9F7F6]">
       <section className="w-full min-h-screen overflow-hidden md:overflow-visible flex flex-col lg:flex-row items-center justify-center relative px-8 lg:px-16 xl:px-24 py-6 lg:py-8 gap-6 lg:gap-12">
-        {/* Conteúdo principal */}
-        <div className="flex flex-col justify-center items-center lg:items-start w-full lg:w-1/2 z-50 pointer-events-auto order-1 lg:order-1 max-w-3xl lg:max-w-none">
+        {/* SpinningLogos - aparece primeiro no mobile, segundo no desktop */}
+        <div className="flex justify-center items-center w-full lg:w-1/2 order-1 lg:order-2 mb-4 lg:mb-0">
+          <motion.div animate={{
+          opacity: 1,
+          scale: 1
+        }} initial={{
+          opacity: 0,
+          scale: 0.8
+        }} transition={{
+          duration: 0.6,
+          ease: "easeOut",
+          delay: 0.4
+        }} className="transform scale-25 sm:scale-60 md:scale-75 lg:scale-110 xl:scale-125">
+            <SpinningLogos />
+          </motion.div>
+        </div>
+
+        {/* Conteúdo principal - aparece segundo no mobile, primeiro no desktop */}
+        <div className="flex flex-col justify-center items-center lg:items-start w-full lg:w-1/2 z-50 pointer-events-auto order-2 lg:order-1 max-w-3xl lg:max-w-none">
           <motion.h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center lg:text-left w-full justify-center lg:justify-start items-center lg:items-start flex whitespace-pre leading-tight tracking-tight font-bold font-right-grotesk" animate={{
           opacity: 1,
           y: 0
@@ -120,23 +136,6 @@ export const HeroSection = ({
               Sessão estratégica 100% gratuita e sem compromisso.
             </motion.p>
           </div>
-        </div>
-
-        {/* SpinningLogos */}
-        <div className="flex justify-center items-center w-full lg:w-1/2 order-2 lg:order-2 mb-4 lg:mb-0">
-          <motion.div animate={{
-          opacity: 1,
-          scale: 1
-        }} initial={{
-          opacity: 0,
-          scale: 0.8
-        }} transition={{
-          duration: 0.6,
-          ease: "easeOut",
-          delay: 0.4
-        }} className="transform scale-25 sm:scale-60 md:scale-75 lg:scale-110 xl:scale-125">
-            <SpinningLogos />
-          </motion.div>
         </div>
       </section>
     </AuroraBackground>
