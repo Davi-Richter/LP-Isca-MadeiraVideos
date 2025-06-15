@@ -20,9 +20,9 @@ export const HeroSection = ({
 }: HeroSectionProps) => {
   return (
     <AuroraBackground className="min-h-screen bg-[#F9F7F6]">
-      <section className="w-full min-h-screen overflow-hidden md:overflow-visible flex flex-col lg:flex-row items-center justify-center lg:justify-center relative px-4 lg:px-16 xl:px-24 py-8 lg:py-8 gap-6 lg:gap-12">
-        {/* SpinningLogos - posicionado no topo centralizado para mobile */}
-        <div className="flex justify-center items-center w-full lg:w-1/2 order-1 lg:order-2">
+      <section className="w-full min-h-screen overflow-hidden md:overflow-visible flex flex-col lg:flex-row items-center justify-center relative px-4 lg:px-16 xl:px-24 py-8 lg:py-8 lg:gap-12">
+        {/* SpinningLogos - hidden on mobile */}
+        <div className="hidden lg:flex justify-center items-center w-full lg:w-1/2 order-1 lg:order-2">
           <motion.div animate={{
           opacity: 1,
           scale: 1
@@ -38,8 +38,8 @@ export const HeroSection = ({
           </motion.div>
         </div>
 
-        {/* Conteúdo principal - posicionado embaixo para mobile */}
-        <div className="flex flex-col justify-center items-center lg:items-start w-full lg:w-1/2 z-50 pointer-events-auto order-2 lg:order-1 max-w-3xl lg:max-w-none px-2 lg:px-0">
+        {/* Conteúdo principal - centralizado e maior em mobile */}
+        <div className="flex flex-col justify-center items-center lg:items-start w-full lg:w-1/2 z-50 pointer-events-auto order-2 lg:order-1 lg:max-w-none px-2 lg:px-0">
           <motion.h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center lg:text-left w-full justify-center lg:justify-start items-center lg:items-start flex whitespace-pre leading-tight tracking-tight font-bold font-right-grotesk" animate={{
           opacity: 1,
           y: 0
