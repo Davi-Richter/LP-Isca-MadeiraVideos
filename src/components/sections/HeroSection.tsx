@@ -1,4 +1,3 @@
-
 import { CheckCircle, ArrowRight } from "lucide-react";
 import { TextRotate } from "@/components/ui/text-rotate";
 import { SpinningLogos } from "@/components/ui/spinning-logos";
@@ -20,9 +19,9 @@ export const HeroSection = ({
 }: HeroSectionProps) => {
   return (
     <AuroraBackground className="min-h-screen bg-[#F9F7F6]">
-      <section className="w-full min-h-screen overflow-hidden md:overflow-visible flex flex-col lg:flex-row items-center justify-center relative px-4 lg:px-16 xl:px-24 py-4 lg:py-8 gap-4 lg:gap-12">
-        {/* SpinningLogos - posicionado no topo para mobile */}
-        <div className="flex justify-center items-center w-full lg:w-1/2 order-1 lg:order-2 mb-2 lg:mb-0">
+      <section className="w-full min-h-screen overflow-hidden md:overflow-visible flex flex-col lg:flex-row items-center justify-center relative px-8 lg:px-16 xl:px-24 py-6 lg:py-8 gap-6 lg:gap-12">
+        {/* SpinningLogos - aparece primeiro no mobile, segundo no desktop */}
+        <div className="flex justify-center items-center w-full lg:w-1/2 order-1 lg:order-2 mb-4 lg:mb-0">
           <motion.div animate={{
           opacity: 1,
           scale: 1
@@ -33,13 +32,13 @@ export const HeroSection = ({
           duration: 0.6,
           ease: "easeOut",
           delay: 0.4
-        }} className="transform scale-50 sm:scale-60 md:scale-75 lg:scale-110 xl:scale-125">
+        }} className="transform scale-25 sm:scale-60 md:scale-75 lg:scale-110 xl:scale-125">
             <SpinningLogos />
           </motion.div>
         </div>
 
-        {/* Conteúdo principal - posicionado embaixo para mobile */}
-        <div className="flex flex-col justify-center items-center lg:items-start w-full lg:w-1/2 z-50 pointer-events-auto order-2 lg:order-1 max-w-3xl lg:max-w-none px-2 lg:px-0">
+        {/* Conteúdo principal - aparece segundo no mobile, primeiro no desktop */}
+        <div className="flex flex-col justify-center items-center lg:items-start w-full lg:w-1/2 z-50 pointer-events-auto order-2 lg:order-1 max-w-3xl lg:max-w-none">
           <motion.h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center lg:text-left w-full justify-center lg:justify-start items-center lg:items-start flex whitespace-pre leading-tight tracking-tight font-bold font-right-grotesk" animate={{
           opacity: 1,
           y: 0
@@ -73,7 +72,7 @@ export const HeroSection = ({
           duration: 0.2,
           ease: "easeOut",
           delay: 0.4
-        }} className="mt-1 md:mt-3 lg:mt-4 text-center lg:text-left">
+        }} className="mt-2 md:mt-3 lg:mt-4 text-center lg:text-left">
             <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#363331] leading-tight tracking-tight font-right-grotesk">
               <AnimatedText text="Atraia clientes com" textClassName="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight tracking-tight font-right-grotesk" className="py-0 justify-center lg:justify-start" gradientColors="linear-gradient(90deg, #363331, #C6C0BE, #363331)" gradientAnimationDuration={2} />
               <AnimatedText text="vídeos que realmente vendem" textClassName="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight tracking-tight font-right-grotesk" className="py-0 justify-center lg:justify-start" gradientColors="linear-gradient(90deg, #363331, #C6C0BE, #363331)" gradientAnimationDuration={2.5} />
@@ -81,7 +80,7 @@ export const HeroSection = ({
             </div>
           </motion.div>
           
-          <motion.p className="text-sm sm:text-base md:text-lg lg:text-xl text-center lg:text-left pt-2 sm:pt-4 md:pt-5 lg:pt-6 leading-relaxed max-w-xl lg:mx-0 mx-auto font-aeonik" animate={{
+          <motion.p className="text-sm sm:text-base md:text-lg lg:text-xl text-center lg:text-left pt-3 sm:pt-4 md:pt-5 lg:pt-6 leading-relaxed max-w-xl lg:mx-0 mx-auto font-aeonik" animate={{
           opacity: 1,
           y: 0
         }} initial={{
@@ -95,7 +94,7 @@ export const HeroSection = ({
             Consultoria gratuita para transformar seu perfil numa máquina de captação de clientes.
           </motion.p>
 
-          <div className="flex flex-col justify-center lg:justify-start items-center lg:items-start mt-4 sm:mt-8 md:mt-10 lg:mt-12 space-y-3">
+          <div className="flex flex-col justify-center lg:justify-start items-center lg:items-start mt-6 sm:mt-8 md:mt-10 lg:mt-12 space-y-3">
             <motion.div animate={{
             opacity: 1,
             y: 0
