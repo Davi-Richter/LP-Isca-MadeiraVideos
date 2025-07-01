@@ -9,6 +9,7 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
+  publicDir: 'public', // 👈 ISSO AQUI é o que garante o uso do /public
   plugins: [
     react(),
     mode === 'development' &&
